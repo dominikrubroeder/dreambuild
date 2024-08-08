@@ -1,0 +1,41 @@
+# Ignore the build output directory
+.next
+
+# Ignore dependency directories
+node_modules
+
+# Ignore environment variables file
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore all log files
+*.log
+
+# Ignore package-lock.json and yarn.lock
+package-lock.json
+
+# Ignore specific config files that might have non-standard formatting
+.next.config.js
+jest.config.js
+next.config.js
+babel.config.js
+
+# Ignore storybook files (if using Storybook)
+.storybook
+
+# Ignore public static assets
+public/**/*.png
+public/**/*.jpg
+public/**/*.svg
+public/**/*.gif
+public/**/*.ico
+
+# Ignore coverage directory (if using coverage tools like Jest)
+coverage
+
+# Ignore other IDE/Editor specific files (optional)
+.vscode
+.idea

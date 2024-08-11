@@ -3,7 +3,7 @@
 import { getStoryblokApi } from "@storyblok/react/rsc";
 import { unstable_noStore as noStore } from "next/cache";
 import { ISbStoriesParams } from "@storyblok/react";
-import { getStoryblokAccessVersion } from "@/lib/storyblok/helpers";
+import { getStoryblokAccessVersion } from "@/lib/cms/storyblok/helpers";
 
 export async function fetchStoryblokStory({
   slug,

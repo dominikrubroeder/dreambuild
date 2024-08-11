@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { storyblokInit } from "@storyblok/react/rsc";
-import { storyblokSettings } from "@/lib/storyblok/settings";
+import { storyblokSettings } from "@/lib/cms/storyblok/settings";
 import Footer from "@/components/molecules/Footer";
 
 const inter = Inter({ subsets: ["latin"] });

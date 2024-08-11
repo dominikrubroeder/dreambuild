@@ -9,6 +9,33 @@ const config = {
     "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
+  safelist: [
+    "mx-auto",
+    "mr-auto",
+    "ml-auto",
+    "max-w-max",
+    {
+      pattern: /p-(0|1|2|4|6|8|10|12|16|20|24|28|32|40|44|48|56|72|80|96)/,
+    },
+    {
+      pattern: /mx-(0|1|2|4|6|8|10|12|16|20|24|28|32|40|44|48|56|72|80|96)/,
+    },
+    {
+      pattern: /rounded-(none|sm|md|lg|xl|2xl|3xl|full)/,
+    },
+    {
+      pattern: /text-(left|center|right)/,
+      variants: ["sm"],
+    },
+    {
+      pattern: /max-w-screen-(none|xs|sm|md|lg|xl|2xl)/,
+      variants: ["xxs", "xs", "sm", "md", "lg", "xl", "2xl", "3xl"],
+    },
+    {
+      pattern: /grid-cols-(1|2|3|4|5|dynamic)/,
+      variants: ["xxs", "xs", "sm", "md", "lg", "xl", "2xl", "3xl"],
+    },
+  ],
   theme: {
     container: {
       center: true,
@@ -71,6 +98,11 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      screens: {
+        xxs: "375px",
+        xs: "480px",
+        "3xl": "1920px",
       },
     },
   },

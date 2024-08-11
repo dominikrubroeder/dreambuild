@@ -10,7 +10,7 @@
     "prettier": "prettier --write './**/*.{ts,tsx,js,json,md}'",
     "proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
     "update-storyblok-component-types": "storyblok pull-components --space=300272 && storyblok-generate-ts source=./components.300272.json target=./component-types-sb",
-    "prepare-build": "npm run prettier && npm run lint && npm run build"
+    "prepare-build": "npm i && npm run update-storyblok-component-types && npm run prettier && npm run lint && npm run build"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",

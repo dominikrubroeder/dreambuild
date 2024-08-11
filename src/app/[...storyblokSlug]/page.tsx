@@ -1,8 +1,8 @@
-import { fetchStoryblokStory } from "@/lib/storyblok";
+import { fetchStoryblokStory } from "../../lib/cms/storyblok";
 import { notFound } from "next/navigation";
 import { StoryblokComponent } from "@storyblok/react";
 import { storyblokInit } from "@storyblok/react/rsc";
-import { storyblokSettings } from "@/lib/storyblok/settings";
+import { storyblokSettings } from "@/lib/cms/storyblok/settings";
 
 storyblokInit(storyblokSettings);
 

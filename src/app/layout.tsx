@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import { storyblokInit } from "@storyblok/react/rsc";
 import { storyblokSettings } from "@/lib/storyblok/settings";
+import Footer from "@/components/molecules/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,15 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
 
-        <footer className="flex items-center justify-center p-4 text-xs">
-          <Link
-            href="https://www.dominikrubroeder.dev"
-            className="text-muted-foreground"
-            target="_blank"
-          >
-            dominikrubroeder.dev
-          </Link>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

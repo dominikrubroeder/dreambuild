@@ -4,7 +4,7 @@
       "name": "container",
       "display_name": null,
       "created_at": "2024-08-11T15:02:55.814Z",
-      "updated_at": "2024-08-11T15:53:08.267Z",
+      "updated_at": "2024-08-11T18:19:03.926Z",
       "id": 6154760,
       "schema": {
         "layout": {
@@ -47,6 +47,14 @@
           "exclude_empty_option": true,
           "default_value": "grid"
         },
+        "tab-54f8005a-b3a7-4deb-a31b-f20a5f6f9395": {
+          "display_name": "Animate",
+          "keys": [
+            "animate_in"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
         "gap": {
           "type": "option",
           "pos": 1,
@@ -60,6 +68,95 @@
         "body": {
           "type": "bloks",
           "pos": 2
+        },
+        "animate_in": {
+          "type": "boolean",
+          "pos": 4
+        },
+        "padding_top": {
+          "type": "bloks",
+          "pos": 5,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "spacer"
+          ]
+        },
+        "padding_bottom": {
+          "type": "bloks",
+          "pos": 6,
+          "restrict_type": "",
+          "restrict_components": true,
+          "maximum": 1,
+          "component_whitelist": [
+            "spacer"
+          ]
+        },
+        "inner_max_width": {
+          "type": "option",
+          "pos": 7,
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "max-width",
+          "default_value": "max-w-screen-xl"
+        },
+        "inner_alignment": {
+          "type": "option",
+          "pos": 8,
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "alignment",
+          "default_value": "mx-auto"
+        },
+        "inner_padding": {
+          "type": "option",
+          "pos": 9,
+          "use_uuid": true,
+          "source": "internal",
+          "exclude_empty_option": true,
+          "datasource_slug": "padding",
+          "default_value": "p-4"
+        },
+        "max_width": {
+          "type": "option",
+          "pos": 10,
+          "use_uuid": true,
+          "default_value": "max-w-none",
+          "source": "internal",
+          "exclude_empty_option": true,
+          "datasource_slug": "max-width"
+        },
+        "alignment": {
+          "type": "option",
+          "pos": 11,
+          "use_uuid": true,
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "alignment",
+          "default_value": "mx-auto"
+        },
+        "padding": {
+          "type": "option",
+          "pos": 12,
+          "use_uuid": true,
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "padding",
+          "default_value": "p-0"
+        },
+        "rounded": {
+          "type": "option",
+          "pos": 13,
+          "use_uuid": true,
+          "default_value": "rounded-none",
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "rounded"
         }
       },
       "image": null,
@@ -107,9 +204,9 @@
     },
     {
       "name": "richtextfield",
-      "display_name": null,
+      "display_name": "Rich Text Field",
       "created_at": "2024-08-11T17:27:16.324Z",
-      "updated_at": "2024-08-11T17:47:54.123Z",
+      "updated_at": "2024-08-11T18:00:34.904Z",
       "id": 6154907,
       "schema": {
         "description": {
@@ -195,7 +292,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "richtextfield",
+      "real_name": "Rich Text Field",
       "component_group_uuid": "cf0f13ce-4436-4e35-9002-4ae019cf5e2e",
       "color": null,
       "icon": null,

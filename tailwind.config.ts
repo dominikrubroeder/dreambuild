@@ -10,12 +10,21 @@ const config = {
   ],
   prefix: "",
   safelist: [
+    "grid",
+    "flex",
     "mx-auto",
     "mr-auto",
     "ml-auto",
     "max-w-max",
+    "bg-transparent",
+    "bg-[#2563EB]",
+    "bg-[#FFFFFF]",
+    "bg-[#000000]",
     {
       pattern: /p-(0|1|2|4|6|8|10|12|16|20|24|28|32|40|44|48|56|72|80|96)/,
+    },
+    {
+      pattern: /gap-(0|1|2|4|6|8|10|12|16|20|24|28|32|40|44|48|56|72|80|96)/,
     },
     {
       pattern: /rounded-(none|sm|md|lg|xl|2xl|3xl|full)/,

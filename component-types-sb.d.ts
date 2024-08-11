@@ -1,4 +1,4 @@
-import { StoryblokStory } from "storyblok-generate-ts";
+import {StoryblokStory} from 'storyblok-generate-ts'
 
 export interface ContainerStoryblok {
   layout:
@@ -9,24 +9,24 @@ export interface ContainerStoryblok {
     | "grid sm:grid-cols-2 md:sm:grid-cols-5"
     | "grid grid-cols-dynamic";
   gap: number | string;
-  body?: (
-    | ContainerStoryblok
-    | PageStoryblok
-    | RichtextfieldStoryblok
-    | SpacerStoryblok
-  )[];
+  body?: (ContainerStoryblok | PageStoryblok | RichtextfieldStoryblok | SpacerStoryblok)[];
+  animate_in?: boolean;
+  padding_top?: SpacerStoryblok[];
+  padding_bottom?: SpacerStoryblok[];
+  inner_max_width: number | string;
+  inner_alignment: number | string;
+  inner_padding?: number | string;
+  max_width?: number | string;
+  alignment?: number | string;
+  padding?: number | string;
+  rounded?: number | string;
   _uid: string;
   component: "container";
   [k: string]: any;
 }
 
 export interface PageStoryblok {
-  body?: (
-    | ContainerStoryblok
-    | PageStoryblok
-    | RichtextfieldStoryblok
-    | SpacerStoryblok
-  )[];
+  body?: (ContainerStoryblok | PageStoryblok | RichtextfieldStoryblok | SpacerStoryblok)[];
   _uid: string;
   component: "page";
   uuid?: string;
